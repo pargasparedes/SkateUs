@@ -19,7 +19,7 @@ Coming soon...
 
 
 ## Usage Information
-Coming soon...
+You can click on the link and it will take you to the deployed page: [SkateUs](https://skateus.herokuapp.com/)
 
 ## Questions?
 Here is my GitHub Profile: [pargasparedes](https://github.com/pargasparedes)
