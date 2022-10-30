@@ -1,7 +1,0 @@
-h1 {
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  transform: translateX(50%);
-  color: darkred;
-}
