@@ -4,6 +4,8 @@ import Homepage from "./pages/homepage"
 import Navbar from './components/navbar';
 import Register from './pages/register';
 import Login from './pages/login';
+import Learn from './pages/learn';
+import Test from './pages/test';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='/learn' element={<Learn/>} />
+        <Route path='/test' element={<Test/>} />
       </Routes>
     </div>
   );

@@ -1,10 +1,27 @@
 const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema({
-    name: String,
-    username: { type: String, default: null },
-    email: { type: String, unique: true },
-    password: { type: String },
+    name: {
+        type: String,
+        trim: true
+    },
+    username: { 
+        type: String,
+        unique: true,
+        required: true,
+        trim: true 
+    },
+    email: { 
+        type: String,
+        unique: true,
+        required: true,
+        match: [/.+@.+\..+/, 'Must match an email address!']
+    },
+    password: { 
+        type: String,
+        required: true,
+        minlength: 5
+    },
     token: { type: String },
     createdAt: { type: String }
 });

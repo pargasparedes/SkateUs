@@ -21,7 +21,7 @@ const resolvers = {
             });
 
             const res = await createdUser.save(); // Saving on MongoDB
-            console.log(res._doc);
+            
             return {
                 id: res.id,
                 ...res._doc
