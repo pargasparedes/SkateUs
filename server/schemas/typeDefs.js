@@ -11,8 +11,8 @@ type User {
 }
 
 input UserInput {
-    name: String
-    username: String
+    name: String!
+    username: String!
 }
 
 input RegisterInput {

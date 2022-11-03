@@ -85,30 +85,33 @@ const resolvers = {
 
         async loginUser(_, {loginInput: { email, password }}) {
             // Check if user exists using email
-            const user = await User.findOne({ email });
+                const user = await User.findOne({ email });
+                if(user){
+                // Check if entered password matches encrypted password
+                if (user && (await bcrypt.compare(password, user.password))) {
+                    // Create a new token
+                    const token = jwt.sign(
+                        { user_id: user._id, email },
+                        "BOLT_PERRO",
+                        {
+                            expiresIn: "1h"
+                        }
+                    );
 
-            // Check if entered password matches encrypted password
-            if (user && (await bcrypt.compare(password, user.password))) {
-                // Create a new token
-                const token = jwt.sign(
-                    { user_id: user._id, email },
-                    "BOLT_PERRO",
-                    {
-                        expiresIn: "1h"
+                    // Attatch token to user trying to log in
+                    user.token = token;
+
+                return {
+                    id: user.id,
+                    ...user._doc
                     }
-                );
-
-                // Attatch token to user trying to log in
-                user.token = token;
-
-            return {
-                id: user.id,
-                ...user._doc
-                }
-            } else {
-            // If user doesnt exist throw error
-            throw new ApolloError('Incorrect password', 'INCORRECT_PASSWORD')
-            };
+                } else {
+                // If user doesnt exist throw error
+                throw new ApolloError('Incorrect password', 'INCORRECT_PASSWORD')
+                };
+             } else {
+                throw new ApolloError('Email not found. Please register', 'NOT_AN_USER')
+             };
         }
     }
 };

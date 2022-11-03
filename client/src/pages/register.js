@@ -96,7 +96,7 @@ function Register(props) {
                 <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                     <h1 class="mb-8 text-3xl text-center">Sign up</h1>
                     
-                        <form className="mt-8 space-y-6" action="#" method="POST">
+                        <form className="mt-8 space-y-6" onSubmit={onSubmit} method="POST">
                             <input type="hidden" name="remember" defaultValue="true" />
                             <div className="-space-y-px rounded-md shadow-sm">
                             <div>
@@ -183,7 +183,7 @@ function Register(props) {
 
                             <div>
                             <button
-                                type="submit" onClick={onSubmit}
+                                type="submit"
                                 className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                             >
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">

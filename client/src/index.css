@@ -4,7 +4,7 @@
 
 @layer base {
   li {
-    @apply p-4
+    @apply md:p-4
   }
 
 
