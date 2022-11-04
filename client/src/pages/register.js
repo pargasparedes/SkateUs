@@ -20,7 +20,7 @@ const REGISTER_USER = gql`
             token
         }
     }
-`
+`;
 
 function Register(props) {
     const context = useContext(AuthContext);

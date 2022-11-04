@@ -1,5 +1,6 @@
 const { ApolloError } = require('apollo-server-express');
 const { User } = require('../models');
+const { Test } = require('../models')
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -112,6 +113,27 @@ const resolvers = {
              } else {
                 throw new ApolloError('Email not found. Please register', 'NOT_AN_USER')
              };
+        },
+
+        async registerTest(_, {inputTest: { name, lastname, email, level, comments, video }}) {
+            
+            // Build mongoose new Test model
+            const newTest = new Test({
+                name,
+                lastname,
+                email: email.toLowerCase(),
+                level,
+                comments,
+                video
+            });
+
+            //Save test in MongoDB
+            const res = await newTest.save();
+
+            return {
+                id: res.id,
+                ...res._doc
+            }
         }
     }
 };

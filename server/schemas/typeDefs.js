@@ -10,6 +10,16 @@ type User {
     createdAt: String
 }
 
+type Test {
+    name: String
+    lastname: String
+    email: String
+    level: String
+    comments: String
+    video: String
+    createdAt: String
+}
+
 input UserInput {
     name: String!
     username: String!
@@ -21,6 +31,16 @@ input RegisterInput {
     email: String
     password: String
     confirmPassword: String
+}
+
+input InputTest {
+    name: String
+    lastname: String
+    email: String
+    level: String
+    comments: String
+    video: String
+    createdAt: String
 }
 
 input LoginInput {
@@ -40,6 +60,7 @@ type Mutation {
 
     registerUser(registerInput: RegisterInput): User
     loginUser(loginInput: LoginInput): User
+    registerTest(inputTest: InputTest): Test
 }
 `;
 

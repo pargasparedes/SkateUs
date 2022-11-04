@@ -1,12 +1,6 @@
 module.exports = [
     {
         id: 0,
-        step: "Intro",
-        mainText: "This is a step by step guide on what you’ll need to work on in order to pass your Junior freeskate test. Thanks for coming to skate with me!",
-        videoUrl: ""
-    },
-    {
-        id: 1,
         step: "Footwork",
         mainText: "In order to make a good footwork sequence, it’s important to use a variety of turns that you’ve learned throughout your skating journey, clusters are the bread and butter of this element, chaining together multiple turns in order to execute a cluster. The most common is a rocker-counter-twizzle cluster as demonstrated in this video. Here’s how to master it!",
         pasos: [
@@ -22,7 +16,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 2,
+        id: 1,
         step: "Solo Spin",
         mainText: "For this solo spin, I decided to do a layback spin, a commonly used upright position that is iconic in figure skating. Here’s how to master it!",
         pasos: [
@@ -36,7 +30,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 3,
+        id: 2,
         step: "Combo Spin",
         mainText: "A combo spin must utilize all 3 basic positions, camel, sit, and upright. Here I do a camel, sit, back sit, back spin in order to achieve this. Technically the back sit is not required, but it helps achieve the necessary rotations, 5 on each foot",
         pasos: [
@@ -50,7 +44,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 4,
+        id: 3,
         step: "Flying Spin",
         mainText: "For the last of our spins, we have to fly. I chose to do a flying camel. Here’s how you can too! we step into this spin very similarly to the camel spin, however instead of doing our 3-turn to initiate the spin, we jump to our other foot",
         pasos: [
@@ -61,7 +55,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 5,
+        id: 4,
         step: "Single Axel",
         mainText: "Now it’s time to jump, we are going to start with our only single jump performed on this test, the single axel. 1 and a half rotations in the air, and the only jump with a forward take off",
         pasos: [
@@ -74,7 +68,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 6,
+        id: 5,
         step: "Double Loop",
         mainText: "The first double we did was a double loop jumps, 2 full rotations in the air, and the first jump we learn that takes off, and lands on the right foot! ",
         pasos: [
@@ -86,7 +80,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 7,
+        id: 6,
         step: "Double Salchow",
         mainText: "Our next double is a salchow, invented by Ulrich Salchow, and one of my favorites. thanks Ulrich! There are a couple ways to enter this jump, I choose to do mine from a forward 3 turn",
         pasos: [
@@ -99,7 +93,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 8,
+        id: 7,
         step: "Double Toe Loop",
         mainText: "Next is toe loop, the first toe jump we’ve talked about today! And the only left foot toe jump. There are many ways to enter this jump as well, the mohawk I execute in this video is actually more rare, but I quite enjoy its timing. Regardless if you do mohawk push back, outside 3-turn push back, or inside 3-turn, we all have to hit our power angle, so that is where we will start our focus",
         pasos: [
@@ -113,7 +107,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 9,
+        id: 8,
         step: "Double Flip",
         mainText: "Our last solo double, and the most important one on this test. The flip! My all time favorite jump, as when it’s done right, there’s really no feeling like it! The flip is one of 2 toe pick jumps on the right foot, the other being the Lutz jump. This is another one with different entries, I like to do a 3-turn, but you can also do this with a mohawk!",
         pasos: [
@@ -125,7 +119,7 @@ module.exports = [
         videoUrl: ""
     },
     {
-        id: 10,
+        id: 9,
         step: "Double Salchow - Double Loop Combo",
         mainText: "For a combo, a lot is the same, you can apply both things from the salchow section, and loop section here. The main difference is what we do in between. Along with keeping that first jump long and low, and not too explosive in height.",
         pasos: [
@@ -133,12 +127,6 @@ module.exports = [
             "2- we are already on our smallest circle for the loop that we talked about earlier, all we have to do is pivot!",
             "3- make sure you land on a soft knee from the salchow, if you land too low, it will kill your momentum. Timing is key in loop combos, any hesitation will throw it off entirely. They’re very delicate! Fragile, handle with care",
         ],
-        videoUrl: ""
-    },
-    {
-        id: 11,
-        step: "Outro",
-        mainText: "And those are some tips on what to think about when working on elements for your junior freeskate. Thanks so much for watching and reading. ",
         videoUrl: ""
     }
 ]
