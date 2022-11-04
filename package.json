@@ -25,10 +25,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start-server": "node server/server.js",
-    "develop": "concurrently \"npm run start-server\" \"cd client && npm start\"",
-    "build": "concurrently \"npm run start-server\" \"cd client && npm start\"",
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"npm run start\" \"cd client && npm start\"",
+    "build": "cd client && npm run build && cd .. && cp -r ./client/build/* ./server/public && echo Done",
+    "install": "npm i && cd ../client && npm i",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

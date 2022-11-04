@@ -51,46 +51,6 @@ function Register(props) {
     });
 
     return (
-        // <Container spacing={2} maxWidth="sm">
-        //     <h3>Register</h3>
-        //     <p>Register Below</p>
-        //     <Stack spacing={2} paddingBottom={2}>
-        //         <TextField 
-        //             label="Full Name"
-        //             name="name"
-        //             onChange={onChange}
-        //         />
-        //         <TextField 
-        //             label="Username"
-        //             name="username"
-        //             onChange={onChange}
-        //         />
-        //         <TextField 
-        //             label="Email"
-        //             name="email"
-        //             onChange={onChange}
-        //         />
-        //         <TextField 
-        //             label="Password"
-        //             name="password"
-        //             onChange={onChange}
-        //         />
-        //         <TextField 
-        //             label="Confirm Password"
-        //             name="confirmPassword"
-        //             onChange={onChange}
-        //         />
-        //     </Stack>
-        //     {errors.map(function(error){
-        //         return (
-        //             <Alert severity="error">
-        //                 {error.message}
-        //             </Alert>
-        //         )
-        //     })}
-        //     <Button variant="contained" onClick={onSubmit}>Register</Button>
-        // </Container>
-
         <div class="bg-grey-lighter min-h-screen flex flex-col">
             <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
                 <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -175,9 +135,9 @@ function Register(props) {
                             </div>
 
                             <div className="text-sm">
-                                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                {/* <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                                 Forgot your password?
-                                </a>
+                                </a> */}
                             </div>
                             </div>
 
@@ -194,14 +154,24 @@ function Register(props) {
                             </div>
                         </form>
 
-                    <div class="text-center text-sm text-grey-dark mt-4">
+                        {errors.map(function(error){
+                            return (
+                                <div className=" text-center ">
+                                    <span className="text-red-500">
+                                        {error.message}
+                                    </span>
+                                </div>
+                            )
+                        })}
+
+                    <div className="text-center text-sm text-grey-dark mt-4">
                         By signing up, you agree to the 
-                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                        <span class="no-underline border-b border-grey-dark text-grey-dark">
                             Terms of Service
-                        </a> and 
-                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                        </span> and 
+                        <span className="no-underline border-b border-grey-dark text-grey-dark">
                             Privacy Policy
-                        </a>
+                        </span>
                     </div>
                 </div>
 

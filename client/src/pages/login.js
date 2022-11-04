@@ -47,41 +47,7 @@ function Login(props) {
     });
 
     return (
-        // <Container spacing={2} maxWidth="sm">
-        //     <h3>Login</h3>
-        //     <p>Login Below</p>
-        //     <Stack spacing={2} paddingBottom={2}>
-        //         <TextField 
-        //             label="Email"
-        //             name="email"
-        //             onChange={onChange}
-        //         />
-        //         <TextField 
-        //             label="Password"
-        //             name="password"
-        //             onChange={onChange}
-        //         />
-        //     </Stack>
-        //     {errors.map(function(error){
-        //         return (
-        //             <Alert severity="error">
-        //                 {error.message}
-        //             </Alert>
-        //         )
-        //     })}
-        //     <Button variant="contained" onClick={onSubmit}>Login</Button>
-        // </Container>
-
-    
-<>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-50">
-        <body class="h-full">
-        ```
-      */}
+      <>
       <div className="flex h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
