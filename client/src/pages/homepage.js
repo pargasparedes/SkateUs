@@ -6,6 +6,7 @@ function Homepage() {
     // console.log(user)
     return (
         <div className='py-[80px]'>
+            <h1>loooooolololol</h1>
             {/* <h1>{user.email}</h1> */}
         </div>
     )
