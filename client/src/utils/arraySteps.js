@@ -13,7 +13,7 @@ module.exports = [
             "Practice your twizzle by starting on a right forward inside edge, and then curving the edge around to almost imitate a 3-turn, followed by rapidly turning forward again using the back of the blade, this creates rotation by manipulating the position on the blade. Keep your arms as square as you can during this turn.",
             "String them all together!"
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/jqocOzbK-GQ"
     },
     {
         id: 1,
@@ -27,7 +27,7 @@ module.exports = [
             "As our hips go forward, our shoulders and head go back, creating a C shape with our body from our head to our free foot.",
             "Bring the arms straight in to the center of the chest, and then once you’ve bent back, send them straight up to the ceiling for that classic silhouette!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/cyQazrlqbsA"
     },
     {
         id: 2,
@@ -41,7 +41,7 @@ module.exports = [
             "To get to our back sit position, we must simply change feet, to do this we have to open up our right side, keeping the left in front, and step our right leg directly under our right hip, pushing with the left foot to snap into our back sit",
             "Then simply rise up into your basic back scratch position",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/UUVKtZ8VRns"
     },
     {
         id: 3,
@@ -52,7 +52,7 @@ module.exports = [
             "This will help you leap off your left foot, which will then need to be lifted into the air as you hop to your right",
             "Once you land on the right, pull into your back camel spin quickly so you don’t lose any momentum!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/Q8lai1zw5Ws"
     },
     {
         id: 4,
@@ -65,7 +65,7 @@ module.exports = [
             "As the right leg comes through, it tucks under and down, allowing us to convert to our backspin position in the air, this creates the first half of rotations",
             "Now once we have converted, we hold our air position for what is the equivalent of a single loop jump at this point. Landing on our right foot, and checking out of our jump over the right side!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/gVtJ-Q_hZKQ"
     },
     {
         id: 5,
@@ -77,7 +77,7 @@ module.exports = [
             "As we reach our maximum with how much we have to load, our circle has become so small, that we have no choice but to pivot, and launch into the air more forward than it might appear.",
             "Make sure your left side does not pull you around your circle, once you are in the air your simply fold into and stay in your back spin position!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/At4H9IlltRo"
     },
     {
         id: 6,
@@ -90,7 +90,7 @@ module.exports = [
             "As we bend and make our circle smaller, another pivot point happens, and that is when we essentially jump forward off our toe pick, it is very similar to an axel at this point!",
             "From here, we convert into our back spin position, as this is a left foot jump so conversion is a must, then, spin and land! Making sure to hit a proper impact position, also known as “the Eagle” position in yoga!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/X27pX_SlU-M"
     },
     {
         id: 7,
@@ -104,7 +104,7 @@ module.exports = [
             "We have to make sure our right hip is flexible, in order to pull that heel to our pick and help launch us into the air",
             "After we have transferred our weight to our left toe pick, and kicked our heel through, it’s time to convert to our back spin! Then follow the steps we covered previously. All jumps are the same after take off!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/Hny1mf59CSU"
     },
     {
         id: 8,
@@ -116,7 +116,7 @@ module.exports = [
             "It is important that we envision ourselves drawing this left foot on an inside edge, but not around the pick. It goes through, or “up and over” similar to the concept of poll vaulting",
             "Once we have our left foot drawn to our picking foot, we launch into the air pivoting forward, and pulling into our back spin position. Don’t forget to keep that left arm in front on the take off!",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/x65WmU7Ay14"
     },
     {
         id: 9,
@@ -127,6 +127,6 @@ module.exports = [
             "We are already on our smallest circle for the loop that we talked about earlier, all we have to do is pivot!",
             "Make sure you land on a soft knee from the salchow, if you land too low, it will kill your momentum. Timing is key in loop combos, any hesitation will throw it off entirely. They’re very delicate! Fragile, handle with care",
         ],
-        videoUrl: ""
+        videoUrl: "https://www.youtube.com/embed/4ZGgn6N17jw"
     }
 ]

@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/authContext";
 import { useNavigate } from 'react-router-dom'
-import {MenuIcon, XIcon} from '@heroicons/react/outline'
 
 function Navbar() {
     const navigate = useNavigate();
@@ -21,8 +20,12 @@ function Navbar() {
                     <h1 className='text-3xl text-blue-600 font-bold mr-6 sm:text-4xl '>SkateUs</h1>
                     <ul className='flex'>
                         <li className='pl-4 text-white text-xl'><Link to="/">Home</Link></li>
+                        {
+                        user && <>
                         <li className='pl-4 text-white text-xl'><Link to="/learn" >Learn</Link></li>
                         <li className='pl-4 text-white text-xl'><Link to="/test" >Test</Link></li>
+                        </>
+                        }
                     </ul>
                 </div>
                 <div className='flex pr-4'>{

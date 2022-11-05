@@ -16,17 +16,19 @@ var learnPages = require('../utils/arraySteps');
 function Learn(props) {
     const [mainPage, setmainPage] = useState(0)
 
-    const displayVideo = learnPages[mainPage].videoUrl
-    // const currentPage[] = (learnPages[mainPage].pasos)
-    // console.log(learnPages[mainPage].pasos[1]);
-// console.log(steps[mainPage].length)
-    // console.log(steps);
-
     const steps = learnPages.map( i => i.pasos)
     
+    function buttonClick() {
+        setmainPage((mainPage === (learnPages.length) - 1) ? 0 : mainPage + 1)
+        window.scroll({
+            top: 0,
+            left: 100,
+            behavior: 'smooth'
+          });
+    };
 
     return (
-        <div className=' learnBg bg-cover grid grid-rows-6 grid-flow-row h-screen bg-black-200 pt-[80px]'>
+        <div className=' learnBg bg-cover grid grid-rows-6 grid-flow-row h-200vh bg-black-200 pt-[80px]'>
             <div className='row-span-2 grid grid-rows-3 justify-items-center'>
                 <h1 className='pt-[10px] basis-10 text-3xl text-center row-span-1'>{learnPages[mainPage].step}</h1>
                 <h2 className='text-center text-lg w-1/2 row-span-3'>{learnPages[mainPage].mainText}</h2>
@@ -64,8 +66,16 @@ function Learn(props) {
             </Swiper>
             <div className='row-span-1 grid grid-rows-3 justify-items-center'>
                 <div className='row-start-2 row-span-2'>
-                    <button className='' onClick={() => setmainPage((mainPage === (learnPages.length) - 1) ? 0 : mainPage + 1)}>Next Element</button>
                 </div>
+            </div>
+            <div className='h-screen grid grid-rows-6 justify-items-center'>
+                <h1 className=' text-4xl self-end row-span-1'>Video Demonstration</h1>
+                <iframe className='self-center row-span-4' width="1080" height="607" src={learnPages[mainPage].videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button className='self-center row-span-1 h-10' 
+                onClick={buttonClick}
+                >
+                        Next Element
+                        </button>
             </div>
         </div>
     )
