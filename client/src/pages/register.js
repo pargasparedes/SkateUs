@@ -51,9 +51,9 @@ function Register(props) {
     });
 
     return (
-        <div class="bg-grey-lighter min-h-screen flex flex-col">
+        <div class=" regBg bg-cover bg-grey-lighter min-h-screen flex flex-col">
             <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+                <div class="bg-white px-6 py-8 rounded-xl shadow-md text-black w-full">
                     <h1 class="mb-8 text-3xl text-center">Sign up</h1>
                     
                         <form className="mt-8 space-y-6" onSubmit={onSubmit} method="POST">
@@ -144,7 +144,7 @@ function Register(props) {
                             <div>
                             <button
                                 type="submit"
-                                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#00477A] py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                             >
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                 <LockClosedIcon className="h-5 w-5 text-blue-500 group-hover:text-blue-400" aria-hidden="true" />
@@ -175,9 +175,9 @@ function Register(props) {
                     </div>
                 </div>
 
-                <div class="text-grey-dark mt-6">
+                <div class="text-white font-extralight text-2xl text-grey-dark mt-6">
                     Already have an account? 
-                    <a class="no-underline border-b border-blue text-blue" href="../login/">
+                    <a class=" font-extralight text-2xl no-underline border-b border-blue text-blue" href="../login/">
                         Log in
                     </a>.
                 </div>

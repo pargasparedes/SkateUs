@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { useMutation } from "@apollo/react-hooks";
 import { useForm } from "../utils/hook";
 import { AuthContext } from "../context/authContext";
+import quote from '../utils/quote.jpg'
 
 
 const REGISTER_TEST = gql`
@@ -58,14 +59,14 @@ function Test(props) {
 
   return (
     <div className=' test-bg bg-cover h-screen grid grid-cols-2 py-[80px] justify-items-center'>
-        <div className=" col-span-1 grid grid-row-3 pt-[80px]">
+        <div className=" pl-[80px] col-span-1 grid grid-row-3 pt-[80px]">
           <div className="grid grid-rows-2 row-span-1 justify-items-center">
               <div className='flex row-start-2'>
                 <h3 className=" text-4xl align-bottom font-medium text-white">Test Submition Form</h3>
               </div>
           </div>
           <div className="grid grid-rows-1 row-span-2 justify-items-center">
-            <form className='row-span-1' onSubmit={onSubmit} method="POST">
+            <form className='row-span-1'>
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
@@ -172,7 +173,7 @@ function Test(props) {
                 <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="inline-flex justify-center rounded-md border border-transparent bg-[#00477A] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     Submit
                   </button>
@@ -182,8 +183,8 @@ function Test(props) {
           </div>
          </div>
 
-       <div className='container col-span-1 bg-contain'>
-        <h1></h1>
+       <div className=' pr-[80px] quote flex justify-items-center col-span-1 bg-contain pt-[80px]'>
+        <img className=' justify-self-center self-center' src={quote} />
        </div>
        </div>
 
