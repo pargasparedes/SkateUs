@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Parallax } from 'swiper';
 import React, { useRef, useState } from "react";
-import './styles/homepage.css'
+import styles from './styles/homepage.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 function Homepage() {
 
     return (
-        <div className=' h-screen py-[80px]'>
+        <div className=' h-screen'>
         <Swiper
             style={{
             "--swiper-navigation-color": "#fff",
@@ -30,14 +30,10 @@ function Homepage() {
             <div
             slot="container-start"
             className="parallax-bg"
-            style={{
-                "backgroundImage":
-                "url(https://swiperjs.com/demos/images/nature-1.jpg)",
-            }}
             data-swiper-parallax="-23%"
             ></div>
             <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
+            <div className="title pt-[80px]" data-swiper-parallax="-300">
                 Slide 1
             </div>
             <div className="subtitle" data-swiper-parallax="-200">
@@ -50,7 +46,7 @@ function Homepage() {
             </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
+            <div className="title pt-[80px]" data-swiper-parallax="-300">
                 Slide 2
             </div>
             <div className="subtitle" data-swiper-parallax="-200">
@@ -63,7 +59,7 @@ function Homepage() {
             </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
+            <div className="title pt-[80px]" data-swiper-parallax="-300">
                 Slide 3
             </div>
             <div className="subtitle" data-swiper-parallax="-200">

@@ -57,16 +57,15 @@ function Test(props) {
 });
 
   return (
-<div className='container w-6/12'>
-
-      <div className="flex flex-col h-screen justify-center items-center">
-          <div className=" max-w-6">
-            <div className="px-4 sm:px-0">
-              <h3 className="text-2xl pb-6 text-center font-medium leading-6 text-gray-900">Test Submition Form</h3>
-            </div>
+    <div className=' test-bg bg-cover h-screen grid grid-cols-2 py-[80px] justify-items-center'>
+        <div className=" col-span-1 grid grid-row-3 pt-[80px]">
+          <div className="grid grid-rows-2 row-span-1 justify-items-center">
+              <div className='flex row-start-2'>
+                <h3 className=" text-4xl align-bottom font-medium text-white">Test Submition Form</h3>
+              </div>
           </div>
-          <div className="mt-5 max-w-10 md:mt-0">
-            <form onSubmit={onSubmit} method="POST">
+          <div className="grid grid-rows-1 row-span-2 justify-items-center">
+            <form className='row-span-1' onSubmit={onSubmit} method="POST">
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
@@ -181,8 +180,12 @@ function Test(props) {
               </div>
             </form>
           </div>
-      </div>
-    </div>
+         </div>
+
+       <div className='container col-span-1 bg-contain'>
+        <h1></h1>
+       </div>
+       </div>
 
   )
 }
