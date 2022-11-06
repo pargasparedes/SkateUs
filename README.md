@@ -12,6 +12,8 @@
 ## Project Description
 Full stack application with authentication from JWT to provide security to users, and pages accessing MongoDB database for data storage and React front end for speed and performance.
 
+Presentation: https://docs.google.com/presentation/d/1RrBkQMcbH3W6MedYnC-Ci7PoXcQ-FLiB-e2V-lzmISc/edit?usp=share_link
+
 ## Installation Instructions
 Go to the deployed application link: https://skateus.herokuapp.com/
 ![screenshot](./client/assets/1.png)
